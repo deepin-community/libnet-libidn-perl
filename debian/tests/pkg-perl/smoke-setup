@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# generates test.pl
+perl Makefile.PL 2>&1
+cp test.pl $TDIR

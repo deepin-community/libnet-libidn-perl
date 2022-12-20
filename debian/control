@@ -1,0 +1,24 @@
+Source: libnet-libidn-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Florian Schlichting <fsfs@debian.org>
+Section: perl
+Rules-Requires-Root: no
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper (>= 10),
+               libidn11-dev,
+               perl
+Standards-Version: 4.1.4
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libnet-libidn-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libnet-libidn-perl.git
+Homepage: https://metacpan.org/release/Net-LibIDN
+
+Package: libnet-libidn-perl
+Architecture: any
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         ${shlibs:Depends}
+Description: Perl bindings for GNU Libidn
+ Provides bindings for GNU Libidn, a C library for handling Internationalized
+ Domain Names according to IDNA (RFC 3490), in a way very much inspired by
+ Turbo Fredriksson's PHP-IDN.
